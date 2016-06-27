@@ -1,0 +1,20 @@
+group 'axk9084'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'axk9084.ProjectCola.view.cmdline.CmdLineMain'
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
